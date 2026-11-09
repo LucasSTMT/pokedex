@@ -128,3 +128,33 @@ nav.paginacao button {
     color: white;
     font-weight: bold;
 }
+
+
+/* TABLETS */
+@media (max-width: 900px) {
+    .catalogo {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+    .catalogo {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .card {
+        padding: 12px 8px;
+    }
+    
+    .filtros input[type="text"] {
+        width: 100%;
+        max-width: 400px;
+        box-sizing: border-box;
+        margin-right: 0;
+        margin-bottom: 10px;
+}
+}
