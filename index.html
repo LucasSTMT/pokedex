@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTUDO POKEDEX OFFLINE</title>
+    <LINk rel="stylesheet" href="style.css"></LINk>
+</head>
+<body>
+    <header>
+        <h1>POKEDEX</h1>
+        <h3>CATÁLOGO LOCAL DE POKEMON</h3>
+    </header>
+    <SECtion class="filtros">
+        <form id="form-busca">
+            <input type="text" id="pesquisa"
+            placeholder="Buscar por nome, número ou tipo...">
+            <button type="submit">Buscar</button>
+        </form>
+    </SECtion>
+    <p id="resultado-busca"></p>
+
+    <main class="catalogo">
+    </main>
+   
+    <nav class="paginacao">
+        <button id="botao-anterior">Anterior</button>
+        <span id="pagina-atual">1</span>
+        <button id="botao-proximo">Próximo</button>
+    </nav>
+
+    <script src="dados.js"></script>
+</body>
+</html>
